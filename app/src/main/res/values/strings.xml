@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Teach Cloud</string>
+    <string name="loginact_userName">Correo electrónico</string>
+    <string name="loginact_password">Contraseña</string>
+    <string name="loginact_btn_login">Log in</string>
+    <string name="loginact_txtv_registro">¿No tienes cuenta? Registrate</string>
+    <string name="registeract_txtv_name">Nombre:</string>
+    <string name="registeract_txtv_userName">Nombre de usuario:</string>
+    <string name="registeract_txtv_password">Contraseña: </string>
+    <string name="registeract_txtv_passwordConfirm">Confirmar contraseña: </string>
+    <string name="registeract_txtv_email">Email:</string>
+    <string name="registeract_txtv_phoneNumber">Teléfono:</string>
+    <string name="registeract_btn_register">Registrarse</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="menu_createAdd">Crear anuncio</string>
+    <string name="menu_profile">Perfil</string>
+    <string name="menu_exit">Salir</string>
+    <string name="mainmenuact_txtv_welcome">Bienvenid@,</string>
+    <string name="mainmenuact_txtv_interested">Quizás te interesa:</string>
+    <string name="createaddact_txtv_create">Crea tu anuncio</string>
+    <string name="createaddact_txtv_description">Descripción</string>
+
+</resources>

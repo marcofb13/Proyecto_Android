@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/naranja1"
+    >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/createaddact_txtv_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/createaddact_txtv_create"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/createaddact_txtv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="20dp"
+                app:layout_constraintTop_toBottomOf="@id/createaddact_txtv_create"
+                android:text="@string/createaddact_txtv_description"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/createaddact_edt_description"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:ems="10"
+                android:gravity="start|top"
+                app:layout_constraintTop_toBottomOf="@id/createaddact_txtv_description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="20dp"
+                android:hint="Escriba su descripción..."
+                android:padding="5dp"
+                android:background="@drawable/border"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/createaddact_txtv_locality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="60dp"
+                app:layout_constraintTop_toBottomOf="@id/createaddact_edt_description"
+                android:text="Localidad"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/createaddact_txtv_province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="20dp"
+                app:layout_constraintTop_toBottomOf="@id/createaddact_edt_description"
+                android:text="Provincia"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/createaddact_spinner_locality"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                app:layout_constraintTop_toBottomOf="@id/createaddact_txtv_locality"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="20dp"
+
+                />
+
+            <Spinner
+                android:id="@+id/createaddact_spinner_province"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                app:layout_constraintTop_toBottomOf="@id/createaddact_txtv_province"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="20dp"
+
+                />
+
+            <TextView
+                android:id="@+id/createaddact_txtv_subjects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Asignatura"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/createaddact_spinner_locality" />
+
+            <Spinner
+                android:id="@+id/createaddact_spinner_subject1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:layout_constraintTop_toBottomOf="@id/createaddact_txtv_subjects"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="20dp"
+                />
+
+            <Button
+                android:id="@+id/createaddact_btn_create"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Crear anuncio "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/createaddact_spinner_subject1" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

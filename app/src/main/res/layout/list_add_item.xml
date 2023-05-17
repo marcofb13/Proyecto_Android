@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:paddingBottom="20dp"
+    android:background="@drawable/tablon">
+
+
+    <TextView
+        android:id="@+id/addsListAct_txtv_teacherName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Nombre Profesor"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/addsListAct_txtv_Localidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Localidad"
+        android:textColor="@color/black"
+
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addsListAct_txtv_teacherName" />
+
+    <TextView
+        android:id="@+id/addsListAct_txtv_province"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Provincia"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/addsListAct_txtv_Localidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/addsListAct_txtv_Localidad" />
+
+    <TextView
+        android:id="@+id/addsListAct_txtv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:text="Teléfono"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/addsListAct_txtv_province"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/addsListAct_img_phone"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+
+
+        android:layout_marginRight="5dp"
+        android:src="@drawable/phone"
+        app:layout_constraintBottom_toBottomOf="@id/addsListAct_txtv_phone"
+        app:layout_constraintEnd_toStartOf="@id/addsListAct_txtv_phone" />
+
+
+    <TextView
+        android:id="@+id/addsListAct_txtv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/border"
+        android:paddingLeft="5dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec est pellentesque, gravida est ut, placerat nisi. Aliquam posuere lorem eu enim feugiat vehicula. Phasellus venenatis eget justo a bibendum."
+        android:textColor="@color/black"
+
+
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addsListAct_txtv_subject1" />
+
+    <TextView
+        android:id="@+id/addsListAct_txtv_subject1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Asignatura 1"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addsListAct_txtv_Localidad" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
